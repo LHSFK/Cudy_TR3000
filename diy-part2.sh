@@ -21,14 +21,4 @@ sed -i 's/LEDE/iStoreOS/g' package/base-files/luci2/bin/config_generate
 sed -i 's/LEDE/iStoreOS/g' package/lean/default-settings/files/zzz-default-settings
 
 
-echo '
-   ▀     ▄▄▄▄    ▄                          ▄▄▄▄   ▄▄▄▄
- ▄▄▄    █▀   ▀ ▄▄█▄▄   ▄▄▄    ▄ ▄▄   ▄▄▄   ▄▀  ▀▄ █▀   ▀
-   █    ▀█▄▄▄    █    █▀ ▀█   █▀  ▀ █▀  █  █    █ ▀█▄▄▄
-   █        ▀█   █    █   █   █     █▀▀▀▀  █    █     ▀█
- ▄▄█▄▄  ▀▄▄▄█▀   ▀▄▄  ▀█▄█▀   █     ▀█▄▄▀   █▄▄█  ▀▄▄▄█▀
-
-                                  Powered by OpenWRT
- -------------------------------------------------------
- %D %V, %C
- -------------------------------------------------------' >  package/base-files/files/etc/banner
+curl -o  package/base-files/files/etc/banner  https://raw.githubusercontent.com/istoreos/istoreos/refs/heads/istoreos-22.03/package/base-files/files/etc/banner
